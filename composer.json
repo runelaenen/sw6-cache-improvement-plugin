@@ -1,0 +1,45 @@
+{
+    "name": "laenen/sw6-cache-improvement-plugin",
+    "description": "laenen/sw6-cache-improvement-plugin",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "Laenen\\CacheImprovement\\LaenenCacheImprovement",
+        "label": {
+            "de-DE": "Cache Improvement plugin",
+            "en-GB": "Cache Improvement plugin"
+        },
+        "description": {
+            "de-DE": "Kleine, gezielte Verbesserungen am Shopware Core verbessern die Cache-Verwaltung statischer Assets und führen zu einer spürbar besseren Performance im Frontend.",
+            "en-GB": "Targeted improvements to the Shopware Core enhance the caching of static assets, resulting in significantly faster load times and better frontend performance."
+        },
+        "supportLink": {
+            "de-DE": "https://github.com/runelaenen/sw6-cache-improvement-plugin/issues",
+            "en-GB": "https://github.com/runelaenen/sw6-cache-improvement-plugin/issues"
+        },
+        "manufacturerLink": {
+            "de-DE": "https://github.com/runelaenen",
+            "en-GB": "https://github.com/runelaenen"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Laenen\\CacheImprovement\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laenen\\CacheImprovement\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rune Laenen",
+            "email": "rune@laenen.me"
+        }
+    ]
+}

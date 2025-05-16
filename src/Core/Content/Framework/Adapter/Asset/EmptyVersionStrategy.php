@@ -16,8 +16,12 @@ readonly class EmptyVersionStrategy implements VersionStrategyInterface
 
     public function getVersion(string $path): string
     {
-        if ($this->systemConfigService->get('LaenenCacheImprovement.config.enableAssetVersionStrategy')) {
-            return '';
+        try {
+            if ($this->systemConfigService->get('LaenenCacheImprovement.config.enableAssetVersionStrategy')) {
+                return '';
+            }
+        } catch (\Throwable $e) {
+            //
         }
 
         return $this->decorated->getVersion($path);
@@ -25,8 +29,12 @@ readonly class EmptyVersionStrategy implements VersionStrategyInterface
 
     public function applyVersion(string $path): string
     {
-        if ($this->systemConfigService->get('LaenenCacheImprovement.config.enableAssetVersionStrategy')) {
-            return $path;
+        try {
+            if ($this->systemConfigService->get('LaenenCacheImprovement.config.enableAssetVersionStrategy')) {
+                return $path;
+            }
+        } catch (\Throwable $e) {
+            //
         }
 
         return $this->decorated->applyVersion($path);

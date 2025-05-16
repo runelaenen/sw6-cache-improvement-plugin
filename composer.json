@@ -2,7 +2,7 @@
     "name": "laenen/sw6-cache-improvement-plugin",
     "description": "laenen/sw6-cache-improvement-plugin",
     "type": "shopware-platform-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "require": {
         "shopware/core": "~6.6.0"

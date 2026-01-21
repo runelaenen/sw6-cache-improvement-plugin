@@ -2,10 +2,10 @@
     "name": "laenen/sw6-cache-improvement-plugin",
     "description": "laenen/sw6-cache-improvement-plugin",
     "type": "shopware-platform-plugin",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
     "require": {
-        "shopware/core": "~6.6.0"
+        "shopware/core": ">6.6.0 <6.8"
     },
     "extra": {
         "shopware-plugin-class": "Laenen\\CacheImprovement\\LaenenCacheImprovement",
@@ -29,11 +29,6 @@
     "autoload": {
         "psr-4": {
             "Laenen\\CacheImprovement\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Laenen\\CacheImprovement\\Tests\\": "tests/"
         }
     },
     "authors": [
